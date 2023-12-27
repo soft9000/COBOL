@@ -9,8 +9,9 @@ As you may know, GnuCOBOL is the officially-supported version for AWS that runs 
 
 <center><img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/AB_COBOL.jpg' width='50%' height='50%'></center>
 
-You platform expertise will be appreciated, as well as credited.
+Your platform expertise will be appreciated, as well as credited.
 
+## zLinks
 Feel free to contact me to schedule your training!
 
 z[Modern COBOL Group](https://www.facebook.com/profile.php?id=61553633952913) on Facebook.
