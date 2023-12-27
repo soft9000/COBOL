@@ -1,9 +1,5 @@
-## Backstory?
-"TheCommons" is where I am 'chumming usefull projects that SHOULD run everyhere.
-
-In as much as is it obviously difficult to test the programs eVeRywHerE please let me know if anything herein fails to operate on your COBOL - and thanks!
-
-(And yes, if you need to hook up your 'stuff to a device using batch, that counts ;)
+## BANNER
+Interesting use of a copybook full 'o big characters.
 
 <img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
 
