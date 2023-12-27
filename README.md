@@ -1,11 +1,15 @@
 ## Backstory?
 Yes, I've a full-time job as a software consultant .... Yet ever interested in ushering others into our higher paying I.T world, working with a client it occurred to me that the planet needs replacements for retiring COBOL gurus?
 
-So I am creating an educational opportunity for GnuCOBOL as an official side-hussle.
+So I am creating an educational opportunity for GnuCOBOL as an official side-hustle.
 
-<img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
+<center><img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'></center>
 
-As you may know, GnuCOBOL is the officially-supported version for AWS that runs ... everywhere.
+As you may know, GnuCOBOL is the officially-supported version for AWS that runs ... everywhere. But not everything GNU goes everywhere, so - with your help - we're tryng to triage.
+
+<center><img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/AB_COBOL.jpg' width='50%' height='50%'></center>
+
+You platform expertise will be appreciated, as well as credited.
 
 Feel free to contact me to schedule your training!
 
