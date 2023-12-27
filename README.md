@@ -3,7 +3,7 @@ Yes, I've a full-time job as a software consultant .... Yet ever interested in u
 
 So I am creating an educational opportunity for GnuCOBOL as an official side-hussle.
 
-<img src='https://github.com/soft9000/Blog9000/blob/master/GnuCOBOL/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
+<img src='https://_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
 
 As you may know, GnuCOBOL is the officially-supported version for AWS that runs ... everywhere.
 
