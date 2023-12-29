@@ -1,5 +1,5 @@
 *> Mission: Demonstrate multi-dimensional array.
-*> GnuCOBOL: cobc -o -free PROC_BANNER3.cob
+*> GnuCOBOL: cobc -free PROC_BANNER3.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER
 IDENTIFICATION DIVISION.
 PROGRAM-ID. PROC_BANNER.
