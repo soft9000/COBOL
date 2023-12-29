@@ -2,6 +2,7 @@
 Interesting use of a copybook full 'o big characters. 
 
 Evolved to demonstrates how to:
+
 (1) Use a MULTI-DIMENSIONAL "Table" (array) 
 
 (2) To a "master detail" character array 😉 
