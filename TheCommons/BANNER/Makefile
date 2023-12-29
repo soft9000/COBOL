@@ -1,7 +1,7 @@
 cobol = cobc
 opts = -x -free
 
-OBJS = 	BANNER_EXAMPLE BANNER_EXAMPLE2
+OBJS = 	BANNER_EXAMPLE BANNER_EXAMPLE2 PROC_BANNER3
 
 all: $(OBJS)
 
@@ -11,10 +11,11 @@ BANNER_EXAMPLE: BANNER_EXAMPLE.cob BIG_CHARS2.cpy
 BANNER_EXAMPLE2: BANNER_EXAMPLE2.cob PROC_BANNER2.cob BIG_CHARS2.cpy 
 	$(cobol) $(opts) BANNER_EXAMPLE2.cob PROC_BANNER2.cob
 
+PROC_BANNER3: BANNER_EXAMPLE2.cob PROC_BANNER3.cob BIG_CHARS2.cpy 
+	$(cobol) $(opts) BANNER_EXAMPLE2.cob PROC_BANNER3.cob -o PROC_BANNER3
+
 clean:
-	rm -f $(OBJS)
-	rm -f *E 
-	rm -f *2 
+	rm -f $(OBJS) 
 	rm -f *.so
 
 
