@@ -15,7 +15,7 @@ Evolves to conceptually demonstrate how to:
 
 Justified the use of a multi-dimensional array ('table') in Modern COBOL.
 
-See the [Makefile](https://github.com/soft9000/COBOL/blob/main/TheCommons/BANNER/Makefile) for which-goeth-wherz ...
+See the [Makefile](https://github.com/soft9000/COBOL/blob/main/TheCommons/BANNER/Makefile) for which-goeth-wherz ... If you are new to using make / Makefiles, then I've an [educational opportunity available](https://www.udemy.com/course/the-gnu-tool-primer/?referralCode=E858B2C2AC9CD872A100) that you might enjoy.
 
 <img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
 

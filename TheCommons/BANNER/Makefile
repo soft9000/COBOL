@@ -1,3 +1,7 @@
+# New to using make / Makefiles?
+# https://www.udemy.com/course/the-gnu-tool-primer/?referralCode=E858B2C2AC9CD872A100
+# :-)
+#
 cobol = cobc
 opts = -x -free
 
