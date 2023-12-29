@@ -7,7 +7,9 @@ Evolves to conceptually demonstrate how to:
 2. Define a "master detail" character array 😉 
 3. Create + CALL a Library (.so)
 4. Redefine a locus 😉 for global usage
-5. Use a Makefile
+5. Use NESTED copy books
+6. See how 01 REDEFINES = superior re-use (!)
+7. Use a Makefile
 
 Justified the use of a multi-dimensional array ('table') in Modern COBOL.
 
