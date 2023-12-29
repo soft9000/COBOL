@@ -9,7 +9,7 @@ Evolves to conceptually demonstrate how to:
 
 (3) Create + CALL a Library (.so)
 
-(4) Redefine a locus 😉 for global usage (Gracias 2 Huib Klink!)
+(4) Redefine a locus 😉 for global usage (Gracias 2 [Huib Klink](https://www.facebook.com/groups/2231622276/user/100005937733189)!)
 
 (5) Use a Makefile
 
