@@ -1,7 +1,7 @@
 ## BANNER
 Interesting use of a copybook full 'o big characters. 
 
-Evolved to demonstrates how to:
+Evolves to conceptually demonstrate how to:
 
 (1) Use a MULTI-DIMENSIONAL "Table" (array) 
 
