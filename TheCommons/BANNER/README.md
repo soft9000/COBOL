@@ -1,6 +1,8 @@
 ## BANNER
 Interesting use of a copybook full 'o big characters. Justified the use of a multi-dimensional array ('table') in Modern COBOL.
 
+See the [Makefile](https://github.com/soft9000/COBOL/blob/main/TheCommons/BANNER/Makefile) for which-goeth-wherz ...
+
 <img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
 
 ## zSocial:
