@@ -3,17 +3,15 @@ Interesting use of a copybook full 'o big characters.
 
 Evolves to conceptually demonstrate how to:
 
-(1) Use a MULTI-DIMENSIONAL "Table" (array) 
-
-(2) To a "master detail" character array 😉 
-
-(3) Create + CALL a Library (.so)
-
-(4) Redefine a locus 😉 for global usage (Gracias 2 [Huib Klink](https://www.facebook.com/groups/2231622276/user/100005937733189)!)
-
-(5) Use a Makefile
+1. Use a MULTI-DIMENSIONAL "Table" (array) 
+2. To a "master detail" character array 😉 
+3. Create + CALL a Library (.so)
+4. Redefine a locus 😉 for global usage
+5. Use a Makefile
 
 Justified the use of a multi-dimensional array ('table') in Modern COBOL.
+
+NOTE - I believe that nested copy books as well as 01 REDEFINES are each universally supported in WORKING STORAGE. Please correct me if your COBOL implementation disagrees - and thanks!
 
 See the [Makefile](https://github.com/soft9000/COBOL/blob/main/TheCommons/BANNER/Makefile) for which-goeth-wherz ... If you are new to using make / Makefiles, then I've an [educational opportunity available](https://www.udemy.com/course/the-gnu-tool-primer/?referralCode=E858B2C2AC9CD872A100) that you might enjoy.
 
