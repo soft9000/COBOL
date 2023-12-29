@@ -1,5 +1,5 @@
 ## BANNER
-Interesting use of a copybook full 'o big characters.
+Interesting use of a copybook full 'o big characters. Justified the use of a multi-dimensional array ('table') in Modern COBOL.
 
 <img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
 
