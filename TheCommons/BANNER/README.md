@@ -14,9 +14,21 @@ Evolves to conceptually demonstrate how to:
 
 Justified the use of a multi-dimensional array ('table') in Modern COBOL.
 
-### NOTE - I believe that nested copy books, as well as 01 REDEFINES are each universally supported in WORKING STORAGE. Please correct me if your COBOL implementation disagrees - and thanks!
+## zPlaylist & Training
+These and many other 'self-teaching' examples will be part of the [YouTube Playlist](https://www.youtube.com/playlist?list=PLItP5KoawLqnjcEVGIhF6FEj8NIBTNjZ3).
+These and many other 'help-me-learn' examples will be part of the [Udemy Training](https://www.udemy.com/course/simply-cobol/?referralCode=EA98738662CCF9535E2B) - FREE until we exceed Udemy's official two (2) hour limit.
 
-See the [Makefile](https://github.com/soft9000/COBOL/blob/main/TheCommons/BANNER/Makefile) for which-goeth-wherz ... If you are new to using make / Makefiles, then I've an [educational opportunity available](https://www.udemy.com/course/the-gnu-tool-primer/?referralCode=E858B2C2AC9CD872A100) that you might enjoy.
+So sign up for the 'Udemy whilst [Modern COBOL: Professional Programmer's Fast-Track](https://www.udemy.com/course/simply-cobol/?referralCode=EA98738662CCF9535E2B) is still a work in progress (or until I land [my next opportunity](https://www.linkedin.com/in/nagyspace/) - whichever comes first ;)?
+
+### De-facto Standards?
+I believe that RETURN-CODE and nested copy books are each universally supported? -So too for a 01 REDEFINES in WORKING STORAGE. 
+
+Please correct me if your COBOL implementation disagrees - and thanks!
+
+## Makefile Order, Matters!
+See the [Makefile](https://github.com/soft9000/COBOL/blob/main/TheCommons/BANNER/Makefile) for which-goeth-wherz. --Note that the orderng therein is the order to review each evolutionary concept.
+
+If you are new to using make / Makefiles, then I've an [educational opportunity available](https://www.udemy.com/course/the-gnu-tool-primer/?referralCode=E858B2C2AC9CD872A100) that you might enjoy.
 
 <img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
 
