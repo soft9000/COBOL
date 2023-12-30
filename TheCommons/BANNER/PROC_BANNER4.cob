@@ -1,12 +1,12 @@
 *> Mission: Demonstrate multi-dimensional array.
-*> GnuCOBOL: cobc -free PROC_BANNER3.cob
+*> GnuCOBOL: cobc -free PROC_BANNER4.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER
 IDENTIFICATION DIVISION.
 PROGRAM-ID. PROC_BANNER.
 
 DATA DIVISION.
 WORKING-STORAGE SECTION.
-COPY "BIG_CHARS3.cpy". *> New!
+COPY "BIG_CHARS3.cpy".
 
 *> Can only fit 8 across the screen (todo: calculate)
 01 BANNER_CHARS_WIDE PIC 9 VALUE 8.
@@ -29,7 +29,6 @@ COPY "BIG_CHARS3.cpy". *> New!
 
 COPY 'CB_RETURN_CODES.cpy'. *> New! GLOBAL Identifiers
 
-
 LINKAGE SECTION.
 01 BANNER-GROUP.
    05 BANNER_FIELD PIC X(8).
@@ -37,7 +36,6 @@ LINKAGE SECTION.
       REDEFINES BANNER_FIELD OCCURS 8 TIMES 
       INDEXED BY BANNER_ARRAY_SS.
       10 FILLER PIC X.
-
 
 PROCEDURE DIVISION USING BANNER-GROUP.
 DISPLAY ' '.
