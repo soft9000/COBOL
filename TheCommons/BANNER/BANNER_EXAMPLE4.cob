@@ -1,11 +1,10 @@
 *> Mission: Demonstrate a call to an included procedure (PROC_).
-*> GnuCOBOL: cobc -x -j -free BANNER_EXAMPLE3.cob
+*> GnuCOBOL: cobc -x -j -free BANNER_EXAMPLE4.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER
 IDENTIFICATION DIVISION.
 PROGRAM-ID. BANNER-EXAMPLE4.
 PROCEDURE DIVISION.
 DISPLAY ' '.
-*>MOVE ZEROES TO MY_RETURN_CODE.
 CALL 'PROC_BANNER' USING '876.543!'.
 DISPLAY 'Magic Register: [' RETURN-CODE ']'. *> New!
 DISPLAY "EXAMPLE4 ENDS".
