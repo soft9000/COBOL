@@ -1,4 +1,4 @@
-*> Mission: Demonstrate a call to another procedure (PROC_).
+*> Mission: Demonstrate a call to a linked procedure (PROC_).
 *> GnuCOBOL: cobc -x -j -free BANNER_EXAMPLE2.cob PROC_BANNER2.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER
 IDENTIFICATION DIVISION.

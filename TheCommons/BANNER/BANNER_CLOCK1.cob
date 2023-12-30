@@ -1,5 +1,5 @@
 *> Mission: Demonstrate time converted to an 'HH.MM.SS' display 
-*> paragraph structure. (First demo - more to come!)
+*> paragraph structure.
 *>
 *> GnuCOBOL: cobc -free BANNER_CLOCK1.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER

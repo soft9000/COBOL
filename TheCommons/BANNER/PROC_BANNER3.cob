@@ -1,4 +1,4 @@
-*> Mission: Demonstrate multi-dimensional array.
+*> Mission: Demonstrate calling a 'significant' procedure.
 *> GnuCOBOL: cobc -free PROC_BANNER3.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER
 IDENTIFICATION DIVISION.

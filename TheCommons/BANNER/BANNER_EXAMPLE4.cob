@@ -1,4 +1,4 @@
-*> Mission: Demonstrate a call + return from a procedure (PROC_).
+*> Mission: Demonstrate a call + return code from a procedure (PROC_).
 *> GnuCOBOL: cobc -x -j -free BANNER_EXAMPLE4.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER
 IDENTIFICATION DIVISION.
