@@ -1,0 +1,11 @@
+
+01 WS-CURRENT-DATE-GROUP.
+    05 WS-CURRENT-DATE.
+        10  WS-CURRENT-YEAR         PIC 9(4).
+        10  WS-CURRENT-MONTH        PIC 9(2).
+        10  WS-CURRENT-DAY          PIC 9(2).
+    05 WS-CURRENT-TIME.
+        10  WS-CURRENT-HOURS        PIC 9(2).
+        10  WS-CURRENT-MINUTE       PIC 9(2).
+        10  WS-CURRENT-SECOND       PIC 9(2).
+        10  WS-CURRENT-MILLISECONDS PIC 9(2).
