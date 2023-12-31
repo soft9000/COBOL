@@ -1,5 +1,5 @@
 *> Mission: Show how LINKAGE WRITING is NOT POSSIBLE.
-*> GnuCOBOL: cobc -free PROC_BANNER6.cob
+*> GnuCOBOL: cobc -free PROC_BANNER7.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER
 IDENTIFICATION DIVISION.
 PROGRAM-ID. PROC_BANNER.
