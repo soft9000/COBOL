@@ -3,14 +3,18 @@ Interesting use of a copybook full 'o big characters.
 
 Evolves to conceptually demonstrate how to:
 
-1. Use a MULTI-DIMENSIONAL "Table" (array) 
-2. Define a "master detail" character array 😉 
-3. Create + CALL a Library (.so)
-4. Redefine a locus 😉 for global usage
-5. Use NESTED copy books
-6. See how 01 REDEFINES = superior re-use (!)
-7. Use "THE" RETURN-CODE
-8. Use a Makefile
+1. Use WORKING STORAGE
+2. Manage a SINGLE-DIMENSIONAL "Table" (array)
+3. Understand a MULTI-DIMENSIONAL Table
+4. Define a "master detail" character array 😉
+5. Redefine a locus 😉 for global usage
+6. Create + CALL a Library (.so)
+7. Properly manage a LINKAGE SECTION
+8. Use NESTED copy books
+9. See how 01 REDEFINES = superior re-use (!)
+10. Use "THE" RETURN-CODE
+11. Return your own "88 state"
+12. Use a Makefile
 
 Justified the use of a multi-dimensional array ('table') in Modern COBOL.
 
