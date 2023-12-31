@@ -4,8 +4,8 @@
 01 CODE_ERROR        PIC 9(4) VALUE 9.
 
 01 MY_RETURN_CODE    PIC 9(4).
-*>   88 RC_SUCCESS           VALUE 1.
-*>   88 RC_WARNING           VALUE 4.
-*>   88 RC_EXCEPTION         VALUE 8.
-*>   88 RC_ERROR             VALUE 9. 
+   88 RC_SUCCESS              VALUE 1.
+   88 RC_WARNING              VALUE 4.
+   88 RC_EXCEPTION            VALUE 8.
+   88 RC_ERROR                VALUE 9. 
  

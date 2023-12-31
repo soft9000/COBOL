@@ -1,0 +1,23 @@
+*> Mission: Demonstrate a CUSTOM call + return code from a procedure (PROC_).
+*> GnuCOBOL: cobc -x -j -free BANNER_EXAMPLE5.cob
+*> Source: https://github.com/soft9000/COBOL/tree/master/TheCommons/BANNER
+IDENTIFICATION DIVISION.
+PROGRAM-ID. BANNER-EXAMPLE5.
+
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+COPY 'CB_RETURN_CODES.cpy'. *> New!
+
+PROCEDURE DIVISION.
+DISPLAY ' '.
+CALL 'PROC_BANNER' USING '876.543!' RETURNING MY_RETURN_CODE.
+IF RC_SUCCESS
+    DISPLAY "All is well!"  *> New!
+ELSE
+    DISPLAY 'Magic Register: [' MY_RETURN_CODE ']'.
+DISPLAY "EXAMPLE5 ENDS".
+GOBACK.
+
+END PROGRAM BANNER-EXAMPLE5.
+
+COPY "PROC_BANNER5.cob".
