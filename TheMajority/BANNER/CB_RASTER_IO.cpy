@@ -1,7 +1,10 @@
-*> NOTE: GnuCOBOL has a huge problem with passing an initialized copybook
-*> here. Recommended using constants here (Standard 2002), instead. Our
-*> tactic is to simply re-use CB_RETURN_CODES for RASTER_RETURN_CODE.
-*> 
+78 RASTER_CODE_SUCCESS          VALUE 1.
+78 RASTER_CODE_WARNING          VALUE 4.
+78 RASTER_CODE_EXCEPTION        VALUE 8.
+78 RASTER_CODE_ERROR            VALUE 9.
+
+78 RASTER_LINES                 VALUE 9.
+
 01 RASTER-IO.
    05 RASTER_RETURN_CODE        PIC 99.
       88 RASTER_SUCCESS         VALUE 1.
