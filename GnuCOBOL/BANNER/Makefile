@@ -11,7 +11,7 @@
 # Randall
 #
 cobol = cobc
-opts = -x -free --debug
+opts = -x -free
 
 OBJS = 	ConstantClock
 
