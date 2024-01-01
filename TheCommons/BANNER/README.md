@@ -14,7 +14,8 @@ Evolves to conceptually demonstrate how to:
 9. See how 01 REDEFINES = superior re-use (!)
 10. Use "THE" RETURN-CODE
 11. Return your own "88 state"
-12. Use a Makefile
+12. String-along Date & Time (2x pun there ;)
+13. Use a Makefile
 
 Justified the use of a multi-dimensional array ('table') in Modern COBOL.
 
