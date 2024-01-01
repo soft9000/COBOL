@@ -1,5 +1,7 @@
 # WORK IN PROGRESS
 
-Constants break IBM COBOL.
+Constants presently break IBM COBOL... 
 
-Stay tuned for the fix - or just use TheCommons?
+Linkage section 01 values presently evil on GnuCOBOL...
+
+So `CB_YIKES.cpy works on all.

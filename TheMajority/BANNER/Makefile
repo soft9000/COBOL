@@ -11,7 +11,7 @@
 # Randall
 #
 cobol = cobc
-opts = -x -free
+opts = -x -free --debug
 
 OBJS = 	BannerClock
 
@@ -19,7 +19,8 @@ all: $(OBJS)
 
 # Mission: Demonstrate LS I/O. Also suporting Constants / Level 78.
 BannerClock: BannerClock.cob PROC_BANNER8.cob CB_RASTER_IO.cpy \
-	WS_CURRENT_DATE.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy
+	WS_CURRENT_DATE.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy \
+	CB_YIKES.cpy
 	$(cobol) $(opts) BannerClock.cob
 
 clean:
