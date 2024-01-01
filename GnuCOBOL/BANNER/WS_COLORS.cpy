@@ -1,4 +1,4 @@
-*> Since Standard 2002:
+*> Primarily Micro Focus & GnuCOBOL:
 01 BLACK    CONSTANT AS 0.
 01 BLUE     CONSTANT AS 1.
 01 GREEN    CONSTANT AS 2.
