@@ -1,4 +1,4 @@
-*> Mission: Demonstrate an attention-getting countdown!
+*> Mission: Demonstrate an attention-getting, color status, countdown.
 *> GnuCOBOL: cobc -x -j -free ConstantClock.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/GbuCOBOL/BANNER
 IDENTIFICATION DIVISION.
@@ -16,7 +16,7 @@ COPY 'CB_CLS.cpy'. *> New!
 01 SCREEN_OFFSET_Y  PIC 9(2).
 
 01 TIME-GROUP.
-   05 STOP-SECONDS  PIC 9(9).
+   05 STOP-SECONDS  PIC S9(9). *> New?
    05 SECONDS-LEFT  PIC 9(9).
 
 01 COLOR-GROUP.
@@ -63,6 +63,7 @@ END-PERFORM.
 
 MOVE BACKGROUND-CHAR TO SCREEN_CHAR.
 MOVE 24 TO SCREEN_HEIGHT.
+MOVE GREEN TO COLOR_BACK. *> PARAMS-CLS!
 PERFORM FOREVER
     MOVE DISPLAY-GROUP TO BANNER_FIELD *> New
     CALL 'PROC_BANNER' USING RASTER-IO
