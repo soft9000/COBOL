@@ -13,7 +13,7 @@
 cobol = cobc
 opts = -x -free
 
-OBJS = 	ConstantClock CoolerClock CountdownClock
+OBJS = 	ConstantClock CoolerClock ShockClock CountdownClock
 
 all: $(OBJS)
 
@@ -28,6 +28,11 @@ CoolerClock: CoolerClock.cob PROC_BANNER9.cob PROC_CLS.cob \
     CB_CLS.cpy CB_RASTER_IO.cpy WS_CURRENT_DATE.cpy \
 	BIG_CHARS3.cpy BIG_CHARS1.cpy WS_COLORS.cpy
 	$(cobol) $(opts) CoolerClock.cob
+
+# Mission: Demonstrate an attention-getting time display.
+ShockClock: ShockClock.cob PROC_BANNER9.cob PROC_CLS.cob \
+    CB_CLS.cpy CB_RASTER_IO.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy WS_COLORS.cpy
+	$(cobol) $(opts) ShockClock.cob
 
 # Mission: Demonstrate an attention-getting countdown! (W.I.P)
 CountdownClock: CountdownClock.cob PROC_BANNER9.cob PROC_CLS.cob \
