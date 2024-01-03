@@ -13,7 +13,7 @@
 cobol = cobc
 opts = -x -free
 
-OBJS = 	ConstantClock
+OBJS = 	ConstantClock CoolerClock CountdownClock
 
 all: $(OBJS)
 
@@ -22,6 +22,17 @@ ConstantClock: ConstantClock.cob PROC_BANNER9.cob CB_RASTER_IO.cpy \
 	WS_CURRENT_DATE.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy \
 	WS_COLORS.cpy
 	$(cobol) $(opts) ConstantClock.cob
+
+# Mission: Demonstrate how to replace a character in a string buffer.
+CoolerClock: CoolerClock.cob PROC_BANNER9.cob PROC_CLS.cob \
+    CB_CLS.cpy CB_RASTER_IO.cpy WS_CURRENT_DATE.cpy \
+	BIG_CHARS3.cpy BIG_CHARS1.cpy WS_COLORS.cpy
+	$(cobol) $(opts) CoolerClock.cob
+
+# Mission: Demonstrate an attention-getting countdown! (W.I.P)
+CountdownClock: CountdownClock.cob PROC_BANNER9.cob PROC_CLS.cob \
+    CB_CLS.cpy CB_RASTER_IO.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy WS_COLORS.cpy
+	$(cobol) $(opts) CountdownClock.cob
 
 clean:
 	rm -f $(OBJS) 
