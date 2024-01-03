@@ -31,12 +31,14 @@ CoolerClock: CoolerClock.cob PROC_BANNER9.cob PROC_CLS.cob \
 
 # Mission: Demonstrate an attention-getting time display.
 ShockClock: ShockClock.cob PROC_BANNER9.cob PROC_CLS.cob \
-    CB_CLS.cpy CB_RASTER_IO.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy WS_COLORS.cpy
+    CB_CLS.cpy CB_RASTER_IO.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy \
+	WS_CURRENT_DATE.cpy WS_COLORS.cpy
 	$(cobol) $(opts) ShockClock.cob
 
-# Mission: Demonstrate an attention-getting countdown! (W.I.P)
+# Mission: Demonstrate an attention-getting countdown!
 CountdownClock: CountdownClock.cob PROC_BANNER9.cob PROC_CLS.cob \
-    CB_CLS.cpy CB_RASTER_IO.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy WS_COLORS.cpy
+    CB_CLS.cpy CB_RASTER_IO.cpy BIG_CHARS3.cpy BIG_CHARS1.cpy \
+	WS_CURRENT_DATE.cpy WS_COLORS.cpy
 	$(cobol) $(opts) CountdownClock.cob
 
 clean:

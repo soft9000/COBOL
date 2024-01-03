@@ -1,4 +1,4 @@
-*> Mission: Demonstrate an attention-getting time display.
+*> Mission: Demonstrate an attention-getting countdown!
 *> GnuCOBOL: cobc -x -j -free ConstantClock.cob
 *> Source: https://github.com/soft9000/COBOL/tree/master/GbuCOBOL/BANNER
 IDENTIFICATION DIVISION.
@@ -11,11 +11,53 @@ COPY "WS_CURRENT_DATE.cpy".
 COPY 'CB_RASTER_IO.cpy'.
 COPY 'CB_CLS.cpy'. *> New!
 
-01 BACKGROUND-CHAR PIC X VALUE ':'.
-01 RASTER_SS       PIC 99.
-01 SCREEN_OFFSET_Y PIC 99.
+01 BACKGROUND-CHAR  PIC X VALUE ':'.
+01 RASTER_SS        PIC 99.
+01 SCREEN_OFFSET_Y  PIC 99.
+
+01 TIME-GROUP.
+   05 STOP-HOUR     PIC 99.
+   05 STOP-MINUTE   PIC 99.
+
+01 ACCEPT-LOOP      PIC 9 VALUE 0.
+   88 OKAY                VALUE 1.
 
 PROCEDURE DIVISION.
+MOVE FUNCTION CURRENT-DATE to WS-CURRENT-DATE-GROUP.
+
+DISPLAY "Time is "  WS-CURRENT-HOURS ":" 
+                    WS-CURRENT-MINUTE '.'
+                    WS-CURRENT-SECOND " Hours."
+
+*> Accept hours.
+PERFORM UNTIL OKAY
+    DISPLAY "Stop Hour? [HH:0-24]"
+    ACCEPT STOP-HOUR
+    IF STOP-HOUR >= 0 THEN
+        IF STOP-HOUR < 25 THEN
+            MOVE 1 TO ACCEPT-LOOP
+        END-IF
+    ELSE
+        DISPLAY 'Please enter hours between 0 and 24.'
+    END-IF
+END-PERFORM.
+
+*> Accept minutes
+MOVE 0 TO ACCEPT-LOOP.
+PERFORM UNTIL OKAY
+    DISPLAY "Stop Minute? [MM:0-59]"
+    ACCEPT STOP-MINUTE
+    IF STOP-MINUTE >= 0 THEN
+        IF STOP-MINUTE < 60 THEN
+            MOVE 1 TO ACCEPT-LOOP
+        END-IF
+    ELSE
+        DISPLAY 'Please enter minutes between 0 and 59.'
+    END-IF
+END-PERFORM.
+
+DISPLAY "Stopping at " STOP-HOUR ':' STOP-MINUTE ' Hours.'
+
 MOVE BACKGROUND-CHAR TO SCREEN_CHAR.
 MOVE 24 TO SCREEN_HEIGHT.
 PERFORM FOREVER
@@ -35,6 +77,12 @@ PERFORM FOREVER
         *> PERFORM DISPLAY_FLAT
         PERFORM DISPLAY_COLORIZED
         END-PERFORM
+        IF WS-CURRENT-HOURS = STOP-HOUR THEN
+            IF WS-CURRENT-MINUTE = STOP-MINUTE THEN
+                DISPLAY "Time's Up!"
+                GOBACK
+            END-IF
+        END-IF
         CALL "C$SLEEP" USING 1 END-CALL
     ELSE
         DISPLAY 'Rasterization Error?'
