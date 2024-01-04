@@ -1,0 +1,25 @@
+*> Mission: Demonstrate ACCEPTance promises & caveats.
+*> GnuCOBOL: cobc -x -j -free acceptance.cob
+*> Source: https://github.com/soft9000/COBOL/tree/master/GbuCOBOL/ACCEPT
+IDENTIFICATION DIVISION.
+PROGRAM-ID. ACCEPTANCE.
+
+DATA DIVISION.
+WORKING-STORAGE SECTION.
+*> /usr/share/gnucobol/copy/screenio.cpy
+COPY 'screenio.cpy'.
+01 USER-DATA        PIC X(10) VALUE SPACES.
+01 DISPLAY-LINE     PIC X(80) VALUE SPACES.
+
+PROCEDURE DIVISION.
+PERFORM UNTIL COB-CRT-STATUS = COB-SCR-F5
+    DISPLAY 'Enter data. Try function keys. F5 = Done.' LINE 2 COLUMN 2
+        WITH FOREGROUND-COLOR IS COB-COLOR-YELLOW
+    ACCEPT USER-DATA LINE 1 COLUMN 1
+      WITH
+        SIZE IS 10 *> Handy!
+    END-ACCEPT
+    STRING 'Function: [' COB-CRT-STATUS '] Data: [' USER-DATA ']' INTO DISPLAY-LINE
+    DISPLAY DISPLAY-LINE LINE 10 COLUMN 2 WITH FOREGROUND-COLOR IS COB-COLOR-GREEN
+END-PERFORM.
+GOBACK.
