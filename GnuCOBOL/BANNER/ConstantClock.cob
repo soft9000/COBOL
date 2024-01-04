@@ -1,6 +1,6 @@
 *> Mission: Demonstrate a colorized console clock.
 *> GnuCOBOL: cobc -x -j -free ConstantClock.cob
-*> Source: https://github.com/soft9000/COBOL/tree/master/GbuCOBOL/BANNER
+*> Source: https://github.com/soft9000/COBOL/tree/master/GnuCOBOL/BANNER
 IDENTIFICATION DIVISION.
 PROGRAM-ID. CONSTANT-CLOCK.
 

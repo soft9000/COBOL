@@ -1,6 +1,6 @@
 *> Mission: Demonstrate ACCEPTance promises & caveats.
 *> GnuCOBOL: cobc -x -j -free acceptance.cob
-*> Source: https://github.com/soft9000/COBOL/tree/master/GbuCOBOL/ACCEPT
+*> Source: https://github.com/soft9000/COBOL/tree/master/GnuCOBOL/ACCEPT
 IDENTIFICATION DIVISION.
 PROGRAM-ID. ACCEPTANCE.
 
