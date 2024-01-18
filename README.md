@@ -12,7 +12,6 @@ As you may know, GnuCOBOL is the officially-supported version for AWS that runs 
 Your platform expertise will be appreciated, as well as credited.
 
 ## zPlaylist & zTraining
-These and many other 'self-teaching' examples will be part of the [YouTube Playlist](https://www.youtube.com/playlist?list=PLItP5KoawLqnjcEVGIhF6FEj8NIBTNjZ3).
 These and many other 'help-me-learn' examples will be part of the [Udemy Training](https://www.udemy.com/course/simply-cobol/?referralCode=EA98738662CCF9535E2B) - FREE until we exceed Udemy's official two (2) hour limit.
 
 So sign up for the 'Udemy whilst [Modern COBOL: Professional Programmer's Fast-Track](https://www.udemy.com/course/simply-cobol/?referralCode=EA98738662CCF9535E2B) is still a work in progress (or until I land [my next opportunity](https://www.linkedin.com/in/nagyspace/) - whichever comes first ;)?
