@@ -19,10 +19,6 @@ So sign up for the 'Udemy whilst [Modern COBOL: Professional Programmer's Fast-T
 ## zSocial Linkz
 Feel free to contact me to schedule your training!
 
-z[Modern COBOL Group](https://www.facebook.com/profile.php?id=61553633952913) on Facebook.
-
-z[GnuCobol Group](https://www.facebook.com/groups/gnucobol) on Facebook.
-
 z[GnuCobol Group](https://www.linkedin.com/groups/12921968/) @ the 'In.
 
 z[Training Opportunity](https://www.udemy.com/course/simply-cobol) on the 'U!
