@@ -8,11 +8,6 @@ In as much as is it obviously difficult to test the programs eVeRywHerE please l
 <img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
 
 ## zSocial:
-
-z[Modern COBOL Group](https://www.facebook.com/profile.php?id=61553633952913) on Facebook.
-
-z[GnuCobol Group](https://www.facebook.com/groups/gnucobol) on Facebook.
-
 z[GnuCobol Group](https://www.linkedin.com/groups/12921968/) @ the 'In.
 
 z[Training Opportunity](https://www.udemy.com/course/simply-cobol) on the 'U!
