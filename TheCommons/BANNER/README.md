@@ -20,7 +20,6 @@ Evolves to conceptually demonstrate how to:
 Justified the use of a multi-dimensional array ('table') in Modern COBOL.
 
 ## zPlaylist & Training
-These and many other 'self-teaching' examples will be part of the [YouTube Playlist](https://www.youtube.com/playlist?list=PLItP5KoawLqnjcEVGIhF6FEj8NIBTNjZ3).
 These and many other 'help-me-learn' examples will be part of the [Udemy Training](https://www.udemy.com/course/simply-cobol/?referralCode=EA98738662CCF9535E2B) - FREE until we exceed Udemy's official two (2) hour limit.
 
 So sign up for the 'Udemy whilst [Modern COBOL: Professional Programmer's Fast-Track](https://www.udemy.com/course/simply-cobol/?referralCode=EA98738662CCF9535E2B) is still a work in progress (or until I land [my next opportunity](https://www.linkedin.com/in/nagyspace/) - whichever comes first ;)?
@@ -38,10 +37,6 @@ If you are new to using make / Makefiles, then I've an [educational opportunity 
 <img src='https://github.com/soft9000/COBOL/blob/main/_IMAGES/SimplyCOBOL_Logo.jpg' width='50%' height='50%'>
 
 ## zSocial:
-
-z[Modern COBOL Group](https://www.facebook.com/profile.php?id=61553633952913) on Facebook.
-
-z[GnuCobol Group](https://www.facebook.com/groups/gnucobol) on Facebook.
 
 z[GnuCobol Group](https://www.linkedin.com/groups/12921968/) @ the 'In.
 
