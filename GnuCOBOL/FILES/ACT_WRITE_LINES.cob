@@ -1,0 +1,38 @@
+*> The following demonstration is part of my "Simply COBOL"
+*> educational opportunity. "Simply COBOL" is now available at
+*> https://www.udemy.com/course/simply-cobol/?referralCode=EA98738662CCF9535E2B
+*>
+*> Mission: INTRO TO FILE PROCESSING.
+*> Demonstrate file creation.
+*> cobc -x -j -free ACT_WRITE_LINES.cob
+IDENTIFICATION DIVISION. 
+PROGRAM-ID. DEMO_WRITE_FILE_CHARS.
+
+ENVIRONMENT DIVISION.
+INPUT-OUTPUT SECTION.
+FILE-CONTROL.
+
+
+SELECT COBOL-FILE
+    ASSIGN TO "~THE-CHARS.TXT".            *> Better
+    *> organization is line sequential.    *> Fun?
+
+DATA DIVISION.
+FILE SECTION.
+FD COBOL-FILE
+RECORD CONTAINS 255 CHARACTERS
+DATA RECORD IS Z-BUFFER.
+01 Z-BUFFER PIC X(255). 
+
+WORKING-STORAGE SECTION. 
+01 THE-CHARS PIC X(26) VALUE 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'.
+
+PROCEDURE DIVISION.
+    OPEN OUTPUT COBOL-FILE
+    MOVE THE-CHARS TO Z-BUFFER  *> Save a "WRITE FROM"
+    PERFORM 10 TIMES
+        WRITE Z-BUFFER
+    END-PERFORM.
+    CLOSE COBOL-FILE.
+STOP RUN.
+
