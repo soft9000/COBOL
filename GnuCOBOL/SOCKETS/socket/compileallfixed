@@ -1,0 +1,38 @@
+rm changeformat
+cobc -x changeformat.cbl
+chmod +x changeformat
+./changeformat changeformat.cbl changeformat1.cbl tofixed
+rm changeformat1
+cobc -x changeformat1.cbl
+chmod +x changeformat1
+rm get_errno.so
+cobc -Wall get_errno.c
+rm errnomessage.so
+cobc -Wall errnomessage.cbl
+rm httpstatus.so
+cobc -Wall httpstatus.cbl
+./changeformat1 tcpipserver.cbl tcpipserver1.cbl tofixed
+rm tcpipserver1
+cobc -x -W tcpipserver1.cbl
+chmod +x tcpipserver1
+./changeformat1 tcpipclient.cbl tcpipclient1.cbl tofixed
+rm tcpipclient1
+cobc -x -W tcpipclient1.cbl
+chmod +x tcpipclient1
+./changeformat1 RESTclient.cbl RESTclient1.cbl tofixed
+rm RESTclient1
+cobc -x -W RESTclient1.cbl
+chmod +x RESTclient1
+./changeformat1 messagesend.cbl messagesend1.cbl tofixed
+rm messagesend1
+cobc -x -W messagesend1.cbl
+chmod +x messagesend1
+./changeformat1 messagepublish.cbl messagepublish1.cbl tofixed
+rm messagepublish1
+cobc -x -W messagepublish1.cbl
+chmod +x messagepublish1
+./changeformat1 messagereceive.cbl messagereceive1.cbl tofixed
+rm messagereceive1
+cobc -x -W messagereceive1.cbl
+chmod +x messagereceive1
+

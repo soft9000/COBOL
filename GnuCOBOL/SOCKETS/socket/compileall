@@ -1,0 +1,24 @@
+rm get_errno.so
+cobc -W get_errno.c
+rm errnomessage.so
+cobc -W errnomessage.cbl
+rm httpstatus.so
+cobc -W httpstatus.cbl
+rm tcpipserver
+cobc -x -W tcpipserver.cbl
+chmod +x tcpipserver
+rm tcpipclient
+cobc -x -W tcpipclient.cbl
+chmod +x tcpipclient
+rm RESTclient
+cobc -x -W RESTclient.cbl
+chmod +x RESTclient
+rm messagesend
+cobc -x -W messagesend.cbl
+chmod +x messagesend
+rm messagereceive
+cobc -x -W messagereceive.cbl
+chmod +x messagereceive
+rm messagepublish
+cobc -x -W messagepublish.cbl
+chmod +x messagepublish

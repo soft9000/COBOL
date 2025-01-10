@@ -1,0 +1,71 @@
+Six programs demonstrating COBOL socket programming.
+
+1.  tcpipclient.cbl and tcpipserver.cbl:  a pair of
+    simple socket programs suitable for learning,
+    testing and trying new and different features.
+
+2.  RESTclient.cbl: accessing US Government Census
+    data and Yahooapis.com stock market data.
+
+3.  messagesend.cbl, messagepublish.cbl
+    and messagereceive.cbl: coordinating activities
+    across multiple platforms with UDP messages.
+
+The script compileall will compile these programs
+and the supporting subroutines
+
+These examples assume ports 8000, 8001 and 8002
+are open. Not, change the port numbers in the
+examples and in the subscriberfile.txt file
+
+1.  To test tcpiserver and tcpipclient:
+    1.1  start a command line instance and run
+         ./tcpipserver localhost 8000
+    1.2  start another command line instance and run
+         ./tcpipclient localhost 8000 get put ls
+         ./tcpipclient localhost 8000 quit
+
+2.  To test RESTclient:
+    2.1  start a command line instance and run
+         ./RESTclient
+
+    this produces a lot of output, so you might
+    want to run
+         ./RESTclient > RESTclient.txt
+         less RESTclient.txt
+
+3.  To test messagesend, messagepublish
+    and messagereceive:
+    3.1  start a command line instance and run
+         ./messagepublish 8000
+    3.2  start another command line instance and run
+         ./messagereceive 8001
+    3.3  start another command line instance and run         
+         ./messagereceive 8002
+    3.4  start another command line instance and run
+         ./messagesend localhost 8000 backupcomplete
+         ./messagesend localhost 8000 load
+         ./messagesend localhost 8000 etlcomplete
+         ./messagesend localhost 8000 quit
+
+    Look at subscriberfile.txt to see what's going on.
+
+As lagniappe for those of you who like fixed format
+uppercase cobol, I extracted changeformat.cbl from
+my preprocess1 example, cleaned it up and made some
+fixes.
+
+This changeformat program will convert cobol to and from
+free/lowercase and fixed/uppercase.
+
+The script compileallfixed will use this changeformat.cbl
+program to convert the main cobol programs to
+fixed/uppercase with a suffix of '1' added to the
+program name and will then compile them. These new
+fixed format programs can be tested similarly to the
+above examples.
+
+These programs were developed using GnuCOBOL 2.0.0
+Built Oct 10 2013 16:15:17 and Ubuntu 14.04
+running on a Lenovo R61i laptop.
+
